@@ -41,10 +41,17 @@ const ArticlesScreen = () => {
     },
     {
       ref: "2308reflection",
-      blurb: "What adventure means and how not to look for it.",
+      blurb: "What is an adventure and how not to look for it.",
       date: "14.08.23",
       title: "Escaping expectation",
       route: "/EscapingExpectation",
+    },
+    {
+      ref: "2403Norway",
+      blurb: "What adventure means and how not to look for it.",
+      date: "02.03.24",
+      title: "Norway",
+      route: "/Norway",
     },
     {
       ref: "2405scrambled",
