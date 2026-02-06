@@ -1,10 +1,13 @@
-import { getImgByPageAndInclude } from "./imageSearching.functions"
+export const makeImgElement = ( folder, imgTitle, style ) => {
+    let img = makeImgUrl( folder, imgTitle )
 
-export const makeImgElement = ( folder, imgTitleInclude, contentLinksDirectory, style ) => {
-    let img = getImgByPageAndInclude(folder,imgTitleInclude,contentLinksDirectory)
-    if (img) {
-        return <img style={style} src={img}/>
-    } else {
-        console.warn(`No image including '${imgTitleInclude}' found in folder ${folder}`)
-    }
+    return <img key={`${folder}/${imgTitle}`} style={style} src={img}/>
 }
+
+
+export const makeImgUrl = ( folder, imgTitle ) => {
+    let img = imgTitle.endsWith('.jpg') ? imgTitle : imgTitle + '.jpg'
+    return `${process.env.REACT_APP_CDN_URL}/${folder}/${img}`
+}
+
+

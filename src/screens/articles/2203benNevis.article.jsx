@@ -57,7 +57,7 @@ const BenNevisLieInScreen = props => {
                 Scotland." (SMC Guidebook) `}/>
 
 
-            <ArticleImgs folder={FOLDER} imgs={['ridge.j','ridge2.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['ridge','ridge2']}/>
 
 
 
@@ -90,7 +90,7 @@ const BenNevisLieInScreen = props => {
                  challenge finding any purchase with my crampon front-points on the coarse granite beneath the delaminating ice. 
                  That's all there is on the blank face of the wall at knee height.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['crux.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['crux']}/>
 
             <ArticleText text={`Looking ahead, a rare and sought after prize. A narrow corridor of exposed rock with fine 
                 cracks in the wall that might just take a nut. The sweet delight of safer, predictable rock protection brings on a grin
@@ -102,14 +102,14 @@ const BenNevisLieInScreen = props => {
                  This vertical exit into the sunny snow fields beyond, presents a final knee trembling effort
                   to be savoured.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['summitPose','summit.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['summitPose','summit']}/>
 
             <ArticleText indent={true} text={`Only, the photos above weren't taken from the summit that day. They were taken the day
                 before, when the views both of far away Loch Linnhe, and nearby cornices were bright and clear. The day we climbed 
                 Orion Face we were reminded that the top is halfway, even on the days you least expect it. At the belays we enjoyed
                 all the white slopes of the winter panorama, and we watched climbers in the distance questing up Tower Ridge.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['calm1.j','calm2.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['calm1','calm2']}/>
 
 
             <ArticleText text={`However, moments after reaching the top, the building southeasterly wind pulled a freezing whiteout over the mountain. Visibilty
@@ -127,7 +127,7 @@ const BenNevisLieInScreen = props => {
                  hour. We arrive at an intersection with the tourist track, exhausted and uninspired by the 90 minute march back to the 
                 stashed tent.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['tent1.j','tent2.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['tent1','tent2']}/>
 
             <ArticleText indent={true} text={`Packed lunches and dinners need careful consideration when you're away from the van
                 for three days. Mustn't be heavy, ought not to go off, and defintely shouldn't remind you of real food - lest you
@@ -142,7 +142,7 @@ const BenNevisLieInScreen = props => {
                 would bring a thank-god tear and a grin anywhere, though I've only torn one open when I've been very hungry. I
                 have also found that those able to translate the description don't get on as well.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['cheese.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['cheese']}/>
 
             <ArticleText indent={true} text={`How to tear a climber away from his diesel heated Van in favour of a tent pitched on snow?
                 With great difficulty. Promising pomme de terre a la viande hachee won't work every time. A 30 minute walk from the
@@ -174,16 +174,16 @@ const BenNevisLieInScreen = props => {
                 The plan to just get on some grade Vs because it'll be probably be engaging yet managable, still sounded reasonable
                 four days later. And what a way to spend a long weekend with your brother.`}/>
 
-            <ArticleImgs folder={FOLDER} imgs={['laugh1.j','laugh2.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['haze.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['ol.j','meSummit']}/>
-            <ArticleImgs folder={FOLDER} imgs={['climb1.j','climb2.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['sunset.j','yawn.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['cmd.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['1color.j','2color.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['art1.j','art2.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['laugh1','laugh2']}/>
+            <ArticleImgs folder={FOLDER} imgs={['haze']}/>
+            <ArticleImgs folder={FOLDER} imgs={['ol','meSummit']}/>
+            <ArticleImgs folder={FOLDER} imgs={['climb1','climb2']}/>
+            <ArticleImgs folder={FOLDER} imgs={['sunset','yawn']}/>
+            <ArticleImgs folder={FOLDER} imgs={['cmd']}/>
+            <ArticleImgs folder={FOLDER} imgs={['1color','2color']}/>
+            <ArticleImgs folder={FOLDER} imgs={['art1','art2']}/>
             <ArticleImgs folder={FOLDER} imgs={['robin']}/>
-            <ArticleImgs folder={FOLDER} imgs={['hands.j','van.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['hands','van']}/>
 
         </div>
     </>)
