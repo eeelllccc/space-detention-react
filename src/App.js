@@ -8,6 +8,7 @@ import BenNevisLieInScreen from './screens/articles/2203benNevis.article';
 import YosemiteOneScreen from './screens/articles/2209yosemite1.article';
 import YosemiteTwoScreen from './screens/articles/2209yosemite2.article';
 import ReflectionScreen from './screens/articles/2308reflection';
+import LiveScreen from './screens/liveScreen.screen.jsx';
 
 function App() {
 
@@ -17,13 +18,15 @@ function App() {
         <Routes>
           <Route element={<HomeScreen/>} exact path="/"/>
           <Route element={<HomeScreen/>} path="/Home"/>
-          <Route element={<ArticlesScreen/>} path="/Articles"/>
 
+          <Route element={<ArticlesScreen/>} path="/Articles"/>
           <Route element={<EcrinsIceScreen/>} path="/WhereToLook"/>
           <Route element={<BenNevisLieInScreen/>} path="/InThePursuitOfALieIn"/>
           <Route element={<YosemiteOneScreen/>} path="/LandOfTheGiantsPartOne"/>
           <Route element={<YosemiteTwoScreen/>} path="/LandOfTheGiantsPartTwo"/>
           <Route element={<ReflectionScreen/>} path="/EscapingExpectation"/>
+
+          <Route element={<LiveScreen/>} path="/Live"/>
         </Routes>
     </Router>
   );
