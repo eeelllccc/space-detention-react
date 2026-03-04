@@ -1,12 +1,9 @@
 import NavBar from "../components/navBar.component";
 import ArticlePreview from "../components/articlePreview.component";
-import { getImgByPageAndInclude } from "../functions/imageSearching.functions";
-import { useContext } from "react";
-import { LinksContext } from "../contexts/links.context";
+import { makeImgUrl } from "../functions/makeImgElement.functions";
 import { useNavigate } from "react-router-dom";
 
 const ArticlesScreen = () => {
-  const { contentLinks } = useContext(LinksContext);
   const navigate = useNavigate();
 
   const imageRefs = [
@@ -75,7 +72,7 @@ const ArticlesScreen = () => {
   return (
     <>
       <NavBar />
-      {contentLinks && (
+      {(
         <div style={articleContainer}>
           {imageRefs.map((item) => {
             const { blurb, date, title } = item;
@@ -85,10 +82,9 @@ const ArticlesScreen = () => {
                   navigate(item.route);
                 }}
                 key={item.ref}
-                imageLink={getImgByPageAndInclude(
+                imageLink={makeImgUrl(
                   "articleThumbnails",
                   item.ref,
-                  contentLinks
                 )}
                 blurb={blurb}
                 date={date}

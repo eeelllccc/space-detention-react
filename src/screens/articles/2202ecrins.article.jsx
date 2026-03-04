@@ -113,8 +113,8 @@ const EcrinsIceScreen = props => {
             <ArticleImgs folder={FOLDER} imgs={['smile','elin.jpg']}/>
             <ArticleImgs folder={FOLDER} imgs={['cheese','moose']}/>
             <ArticleImgs folder={FOLDER} imgs={['1.jpg','4.jpg']}/>
-            <ArticleImgs folder={FOLDER} imgs={['2.j','3.j']}/>
-            <ArticleImgs folder={FOLDER} imgs={['climb1.j','climb2.j']}/>
+            <ArticleImgs folder={FOLDER} imgs={['2','3']}/>
+            <ArticleImgs folder={FOLDER} imgs={['climb1','climb2']}/>
             <ArticleImgs folder={FOLDER} imgs={['gear1','gear2']}/>
             <ArticleImgs folder={FOLDER} imgs={['rack1','rack2']}/>
             {/* <ArticleImgs folder={FOLDER} imgs={['end1','end2']}/> */}

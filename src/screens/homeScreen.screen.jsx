@@ -1,11 +1,7 @@
-import { useContext, useEffect, useState } from "react"
 import CoverImage from "../components/coverImage.component"
-import { LinksContext } from "../contexts/links.context"
-import { getImgsByPage, getImgByPageAndInclude } from "../functions/imageSearching.functions"
 import NavBar from "../components/navBar.component"
 import { useNavigate } from "react-router-dom"
 import '../styles/accentButton.style.css';
-import ArticleImgs from "../components/articleImgs.component"
 import "../styles/homePageText.style.css"
 
 const HomeScreen = () => {
@@ -16,14 +12,14 @@ const HomeScreen = () => {
             <NavBar/>
             <CoverImage folder={'homePage'} img={'glen'} text={[
             `Welcome to this small pocket of the Internet,`,
-            `I hope it brings you something fresh and spacious.`
+            `I hope you find open space.`
             ]}
             textContainerStyle={{top: '70%'}}
             headerClassName={'coverText'}
             headerStyle={{zIndex:'98'}}
             button={{
                 onClick:()=>{navigate('/Articles')},
-                text:'Read more!',
+                text:'Read more',
                 className:'accentbutton',
                 style:{
                     width:'150px',

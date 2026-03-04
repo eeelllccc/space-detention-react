@@ -1,25 +1,27 @@
 import ArticleText from "../../components/articleText.component";
 import ArticleImgs from "../../components/articleImgs.component";
 import ArticleHeader from "../../components/articleHeader.component";
+import NavBar from "../../components/navBar.component"
 
 const NorwayScreen = (props) => {
   const FOLDER = "2403Norway";
 
   const screen = {};
 
-  return (
+  return (<>
+    <NavBar/>
     <div style={screen}>
       <ArticleHeader text="Norway" date="02.03.24" />
       <ArticleImgs folder={FOLDER} imgs={["watersunset"]} />
 
       <ArticleText
-        text={`On the return flight from Tromso the plane was really hot. My legs were wet inside my trousers, I felt claustrophobic and the irrefutable hours before landing were bringing on a low-level panic. After a week of ski-touring it felt eerily similar to quietly shuffling across the middle of a vaste icy slope, muttering to yourself to stay calm and stay on your edges.`}
+        text={`On the return flight from Tromso the plane was really hot. My legs were wet inside my trousers, I felt claustrophobic and the hours before landing were bringing on a dull panic. After a week of ski-touring it felt eerily similar to quietly shuffling across the middle of a vaste icy slope, muttering to yourself to stay calm and stay on your edges.`}
       />
 
       <ArticleText
         indent={true} text={`This stressful recital on skinned skis was a lot like tiptoeing out onto a bold traverse of a rock climb. Balancing on a few millimetres along the edge of each ski, 
       untethered and stranded on a windswept slip-and-slide to the valley floor. It felt just like 
-      creeping further and further onto a blank slab of rock, glimpsing behind you the rope swaying limply between you and an anxious belayer.`}
+      creeping further and further onto a blank slab of rock; below you, the rope swaying limply between you and an anxious belayer.`}
       />
 
       <ArticleImgs folder={FOLDER} imgs={["windswept"]} />
@@ -33,14 +35,14 @@ const NorwayScreen = (props) => {
       <ArticleImgs folder={FOLDER} imgs={["reflection"]} />
 
       <ArticleText
-        text={`It was sort of my first time ski-touring, besides putting skins on my skis once before at the scene of a broken drag lift in Chamonix. I had always imagined zig-zagging up snow slopes in a pair of flat tracks, each the width of a ski, cut into the snow by those who had gone before. Tracks looking like two tiny roads cut into the side of a mountain pass. I thought that if you were breaking trail in fresh snow then making the tracks would come naturally - the skis would do the work. I found out pretty quickly that this was not the case.`}
+        text={`It was sort of my first time ski-touring, besides putting skins on my skis once before at the scene of a broken drag lift in Chamonix. I had always imagined zig-zagging up snow slopes in a pair of flat tracks, each the width of a ski, cut into the snow by those who had gone before. Tracks looking like two tiny roads cut into the side of a mountain pass. I found out pretty quickly that this was not the case.`}
       />
 
       <ArticleText
         text={`In hindsight I had enough experience winter climbing to know that this wasn't 
-       to be. Kicking up snow slopes in mountaineering boots sometimes only makes a small divot in hard snow, hence why you need spikey crampons to cut deeper for grip. So the same 
-       weight spread over two big skis would only compress the very softest of 
-       snow into a pair of cleanly cut flat tracks. What I would never have guessed is that hard snow doesn't stop play, it just makes it really scary.`}/>
+       to be. Kicking up snow slopes in mountaineering boots sometimes only makes a small divot in hard snow, hence why you need sharp crampons to cut deeper for grip. So the same 
+       weight spread over two big skis? It would only compress the very softest of 
+       snow into a pair of comfy tracks. So it turns out there aren't really tracks at all, and it's just really scary.`}/>
 
       <ArticleImgs folder={FOLDER} imgs={["olfun"]} />
 
@@ -53,7 +55,7 @@ const NorwayScreen = (props) => {
        were other-worldly, super-soft on one side, the other coated in a wildly sticky glue that 
        never goes off. The skin is like a big fury Post-it-Note, so you can stick it and 
        re-stick it to the bottom of the skis again and again. The best part was an overwhelmingly 
-       potent perfume, doused on the skins leaving the factory.`}
+       potent perfume, doused on the skins leaving the factory (if it's only Pomoca that do this, then I won't be shopping anywhere else).`}
       />
 
       <ArticleText text={`On Sunday, March 3rd, we parked right in the centre of a very icy car park on the first day of trip. We were still living out of our suitcases after an overnight stop in Tromso. It felt like all the locals were watching us, all stood near their cars at the edge of the car park, off the ice and near the snow.`}/>
@@ -70,11 +72,11 @@ const NorwayScreen = (props) => {
 
       <ArticleImgs folder={FOLDER} imgs={["firstsummit","me"]} />
 
-      <ArticleText text={`Day two was a steep and sweaty climb. Unrelenting sun bouncing into the South-facing scoop and the nerve-wracking snow conditions coming hand in hand as everything got a bit melty. I was relieved when we decided to turn around. It's exhausting to decided together time and time again that: though it doesn't bode well, there isn't yet a good reason to stop pushing on.`}/>
+      <ArticleText text={`Day two was a steep and sweaty climb. Unrelenting, sun bouncing into the South-facing scoop and the nerve-wracking snow conditions coming hand in hand as everything got a bit melty. I was relieved when we decided to turn around. It's exhausting to decided time and time again that: though the conditions aren't great, there isn't yet a good reason to turn around.`}/>
 
       <ArticleImgs folder={FOLDER} imgs={["ollydistance"]} />
 
-      <ArticleText indent={true} text={`We made it to the top of the last reasonable snow slopes before the steepness and warmth combined to make it an exercise in trying to skin up a sand dune. We were stood beneath the big buttress on the left of the following photo, a few hundred meters short of the summit of Store Kjsotinden, 1488m. The snow runnels between us and the summit look quite appealing from a safe distance, but it was hot sugar and I got to the bottom with slush crammed in the vents of my helmet after a number of crashes.`}/>
+      <ArticleText indent={true} text={`We made it to the top of the last reasonable snow slopes before the steepness and warmth made it an exercise in trying to skin up a sand dune. We were stood beneath the big buttress on the left of the following photo, a few hundred meters short of the summit of Store Kjsotinden, 1488m. The snow runnels between us and the summit look quite appealing from a safe distance, but it was hot sugar, and I got to the bottom of the mountain with slush crammed in the vents of my helmet after a number of crashes.`}/>
       
       <ArticleImgs folder={FOLDER} imgs={["day2summit"]}/>
 
@@ -99,7 +101,7 @@ const NorwayScreen = (props) => {
       <ArticleImgs folder={FOLDER} imgs={["window"]} />
       <ArticleImgs folder={FOLDER} imgs={["windscreen"]} />
     </div>
-  );
+  </>);
 };
 
 export default NorwayScreen;

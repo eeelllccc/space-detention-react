@@ -1,11 +1,9 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import WebFont from 'webfontloader';
 import DefaultButton from "./defaultButton.component";
-import { LinksContext } from "../contexts/links.context";
 import { makeImgElement } from "../functions/makeImgElement.functions";
 
 const CoverImage = props => {
-    const { contentLinks } = useContext(LinksContext)
 
     useEffect(()=>{
         WebFont.load({
@@ -57,7 +55,7 @@ const CoverImage = props => {
                     textClassName={props.button.textClassName}/>}
                     
             </div>
-            { contentLinks && makeImgElement(props.folder, props.img, contentLinks, imgStyle) }
+            { makeImgElement(props.folder, props.img, imgStyle) }
         </div>
     )
 }

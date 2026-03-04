@@ -1,23 +1,25 @@
 import ArticleText from "../../components/articleText.component";
 import ArticleImgs from "../../components/articleImgs.component";
 import ArticleHeader from "../../components/articleHeader.component";
+import NavBar from "../../components/navBar.component"
 
 const ScrambledScreen = (props) => {
   const FOLDER = "2405CuillinRidge";
 
   const screen = {};
 
-  return (
+  return (<>
+    <NavBar/>
     <div style={screen}>
       <ArticleHeader text="Scrambled" date="25.05.24" />
       <ArticleImgs folder={FOLDER} imgs={["thumbnail"]} />
 
       <ArticleText
         text={`Classic Rock is Ken Wilson's compilation of eighty timeless 
-        rock climbs on the proudest mountain cliffs across Britain. Improbably lower grade routes 
+        rock climbs on the proudest mountain cliffs across Britain. Improbable, lower-grade routes 
         teasing their way up cracks and ledges to the summits of the most remote peaks in Snowdonia,
          the Lakes, the Highlands and on the Isle of Skye. Classic Rock sits on my coffee table, 
-         it's double-spreads of crisp granite and 
+          double-spreads of crisp granite and 
          rhyolite gnawing at my patience with the City. The golden grain of colour-film photos from the 70s evokes such a painful 
          nostalgia. For a moment I'm with my brother, coiling ropes in the quietening evening sun and  
          watching the sun graze over the clumpy slopes of Moel Cynghorion.`}
@@ -86,7 +88,7 @@ const ScrambledScreen = (props) => {
 
       <ArticleText
         text={`At the top of Gars-bheinn there was Soay, Egg and Rum. We were stunned and smiling and we were 
-        worried about chewing what we had bitten off. Over our shoulders the whole of the dragons back was squashed into the frame. And though it didn't look that far, our legs did feel 895m above the beach and far, far from the boat meandering back to Elgol.`}
+        worried about chewing what we had bitten off. Over our shoulders the whole of the dragons back was squashed into the frame. And though it didn't look that far, our legs did feel 895m above the beach and far, far from the boat meandering back to Elgol. So we scrambled on.`}
       />
       <ArticleImgs folder={FOLDER} imgs={["dragonsback"]} />
 
@@ -103,19 +105,18 @@ const ScrambledScreen = (props) => {
       <ArticleImgs folder={FOLDER} imgs={["anstac"]} />
       <ArticleImgs folder={FOLDER} imgs={["pyramid","5"]} />
       
-      <ArticleText text={`I've never experienced a richer sunset. A precious moment, and the kindest gift from the Cuillins. The stove was steaming and we sat amidst tufts of the greenest grass gorging on impossibly brief cosiness. It was a gift to have arrived at a place we could shelter for the night. A gift to be not 15 minutes later and a gift for the rainstorm to concede the sunset. We dashed into our bivy bags as the first heavy drops clattered down in the fading, stil-pink light of a very, very long day.`} />
+      <ArticleText text={`I've never experienced a richer sunset. A precious moment, and the kindest gift from the Cuillins. The stove was steaming and we sat amidst tufts of the greenest grass gorging on impossibly brief cosiness. It was a gift to have arrived at a place we could shelter for the night. A gift to be not 15 minutes later, and a gift for the rainstorm to wait just 15 minutes while the sun set. We dashed into our bivy bags as the first heavy drops clattered down in the fading, stil-pink light of a very, very long day.`} />
 
       <ArticleImgs folder={FOLDER} imgs={["6","cookingtogether"]} />
 
-      <ArticleText text={`I can't remember when we came out of the clouds on that final day. We left our wet slot in the cliff shortly after 5am. Our improbable sunset sanctuary was gone, obliviously reclaimed by a thick fog and endless, blind mounds of greasy shale. Things happened between The Wart and <name of last munroe>, in some order and none without considerable effort. 1. We got lost, 2. we realised that the compass, though inaccurate and unreliable (due to the exceptionally magnetic rock underfoot), was infact more accurate and reliable than GPS, 3. the Bazier Tooth is a terrifyingly imposing rock formation, 4. a pint in the pub is more important than summiting all of the munroes on the ridge. `} />
+      <ArticleText text={`I can't remember when we came out of the clouds on that final day. We left our wet slot in the cliff shortly after 5am. Our improbable sunset sanctuary was gone, obliviously reclaimed by a thick fog and endless, blind mounds of greasy shale. Things happened between The Wart and  Sgùrr nan Gillean, in some order and none without considerable effort. 1. We got lost, 2. we realised that the compass, though inaccurate and unreliable (due to the exceptionally magnetic rock underfoot), was infact more accurate and reliable than GPS, 3. the Bazier Tooth is a terrifyingly imposing rock formation, 4. a pint in the pub is more important than summiting all of the munroes on the ridge. `} />
       <ArticleText text={``} />
 
       <ArticleImgs folder={FOLDER} imgs={["clouds"]} />
       <ArticleImgs folder={FOLDER} imgs={["pint"]} />
       <ArticleImgs folder={FOLDER} imgs={["1","2"]} />
-      <ArticleImgs folder={FOLDER} imgs={[""]} />
     </div>
-  );
+  </>);
 };
 
 export default ScrambledScreen;

@@ -1,13 +1,15 @@
 import ArticleText from "../../components/articleText.component";
 import ArticleImgs from "../../components/articleImgs.component";
 import ArticleHeader from "../../components/articleHeader.component";
+import NavBar from "../../components/navBar.component"
 
 const ReflectionScreen = (props) => {
   const FOLDER = "2308reflection";
 
   const screen = {};
 
-  return (
+  return (<>
+    <NavBar/>
     <div style={screen}>
       <ArticleHeader text="Escaping expectation" date="14.08.23" />
 
@@ -232,7 +234,7 @@ const ReflectionScreen = (props) => {
 
       <ArticleImgs folder={FOLDER} imgs={["metenzing"]} />
     </div>
-  );
+  </>);
 };
 
 export default ReflectionScreen;

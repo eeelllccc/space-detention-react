@@ -1,10 +1,7 @@
-import { useContext, useEffect } from "react"
-import { getImgByPageAndInclude } from "../functions/imageSearching.functions"
-import { LinksContext } from "../contexts/links.context"
+import { useEffect } from "react"
 import { makeImgElement } from "../functions/makeImgElement.functions"
 
 const ArticleImgs = props => {
-    const { contentLinks } = useContext(LinksContext)
     const imgContainer = {
         display : 'flex',
         margin: '2vw 5vw',
@@ -27,9 +24,9 @@ const ArticleImgs = props => {
     switch (props.imgs.length) {
         case 1:
            return (<>
-           { contentLinks && 
+           { 
                 <div style={imgContainer}>
-                    { contentLinks && makeImgElement(props.folder, props.imgs[0],contentLinks, singleImg) }
+                    { makeImgElement(props.folder, props.imgs[0], singleImg) }
                 </div>
             }
             </>) 
@@ -37,15 +34,9 @@ const ArticleImgs = props => {
         default:
             return (
             <div style={{...imgContainer,height:'30vw'}}>
-                { contentLinks && 
+                {
                     props.imgs.map( imgString => {
-                        let img = getImgByPageAndInclude(props.folder,imgString,contentLinks)
-                        if (img) {
-                            return (<img key={img} style={sideBySideImg} src={img}/>)
-                        } else {
-                            console.warn(`No image including '${imgString}' found in folder ${props.folder}`)
-                        }
-                        
+                        return makeImgElement(props.folder, imgString, sideBySideImg)
                     })
                 }
             </div>

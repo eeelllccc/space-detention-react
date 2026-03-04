@@ -15,3 +15,17 @@
 .active {
     background-color: rgba(117, 117, 117, 0.101)
 }
+
+.red {
+    color: red;
+}
+
+/* hover state matches your original hover but with red theme */
+.red:hover {
+    background-color: rgba(255, 0, 0, 0.1);  /* light red */
+}
+
+/* active state */
+.red.active {
+    background-color: rgba(255, 0, 0, 0.1);
+}

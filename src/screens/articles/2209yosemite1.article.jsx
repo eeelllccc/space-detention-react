@@ -46,7 +46,7 @@ const YosemiteOneScreen = props => {
              it anyway.`} />
 
             <ArticleText text={`2pm came and went and we were still hauling the bags up to our 
-            bivy ledge at 10pm, which did feel like 6am as it transpired. In the morning 
+            bivvy ledge at 10pm, which did feel like 6am as it transpired. In the morning 
             we looked really tired. And yet the wonders of coffee transformed us.`}/>
 
             <ArticleImgs folder={FOLDER} imgs={['tiredAlex','teamWashington']}/>
@@ -113,16 +113,16 @@ const YosemiteOneScreen = props => {
 
             <ArticleText indent={true} text={`It’s safe to say we weren’t very efficient on our first 
             outing. We turned round a few pitches from the top in favour of getting back down to base 
-            camp in the valley at a reasonable time. Learning quickly had to involving hating moments 
-            of it, but more importantly - not falling out of love with the romantic dream on day 2 of 23.
+            camp in the valley at a reasonable time. Learning quickly had to involve hating moments 
+            of it, but more importantly not falling out of love with the romantic dream on day 2 of 23.
              During our descent, the East 
             Buttress of El Capitan split the final rays of relenting California sunshine, 
             pressing its immense shadow over the valley. `}/>
 
             <ArticleImgs folder={FOLDER} imgs={['darkAbseil','noseSil']}/>
 
-            <ArticleText indent={true} text={`Time on the ground is time to recharge in the wonderful
-             squalor of abundance that we called home for three weeks. A grimy paradise with running 
+            <ArticleText indent={true} text={`Time on the ground is time to recharge in wonderful
+             squalor. A dusty paradise with horizontal ground, running 
              water, toilets and bears. Hundred-foot pines shade the shuttle bus, swinging through the 
              campgrounds to the café. Hikers and Gazers with iced coffees - a sight to see gawping at 
              the vast walls. Some of the team had US sim cards, but in my case the Wi-Fi at the café 
@@ -138,10 +138,10 @@ const YosemiteOneScreen = props => {
             <ArticleText text={`It became the West Face of Learning Tower. I forgot a rope, and I don’t
              know who forgot the gas. Izzy, Alex and I got a 5am drop-off a long way from camp. We stood 
              at the side of the road as the car slipped into the dark pines, too slowly realising that 
-             we were without the static. We couldn’t call Ollie back – and it would have ruined his plans
+             we were without the static. We couldn’t call Ollie back, and it would have ruined his plans
                if we could. I started to hitch-hike the two hours back to camp. It was light before I got 
                picked up and I'd covered half the distance on foot. I had better luck on my way out of 
-               the campsite - rope over my shoulders. I got dropped back to
+               the campsite, rope over my shoulders. I got dropped back to
                 the start of the approach; kindly gifted with a pack of ramen, a banana, and some Twizzlers.
                  Somehow, I
                  caught up with Alex and Izzy, still coaxing our pig through the boulder fields beneath

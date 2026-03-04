@@ -3,7 +3,7 @@ import '../styles/defaultButton.style.css';
 
 const NavBar = props => {
 
-    const routes = ['Home','Articles']
+    const routes = ['Home','Articles','Live']
 
     const containerStyle = {
         display: 'flex',
@@ -14,13 +14,14 @@ const NavBar = props => {
     return (
         <div style={containerStyle}>
             {routes.map( route => {
+                const buttonCSSClass = (route == 'Live') ? 'red button' : 'button';
                 return (
                     <NavLink
                         key={route}
                         to={`/${route}`}
                         end
                         className={({ isActive }) =>
-                          isActive ? 'button active' : 'button'
+                          isActive ? `${buttonCSSClass} active` : buttonCSSClass
                         }
                     >{route}</NavLink>)
             })}
