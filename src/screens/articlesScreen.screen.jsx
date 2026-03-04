@@ -9,7 +9,7 @@ const ArticlesScreen = () => {
   const imageRefs = [
     {
       ref: "2202ecrins",
-      blurb: "A long short weekend, a steep learning curve and squirty cream.",
+      blurb: "A long short weekend, and a steep learning curve.",
       date: "04.02.22",
       title: "Where to look",
       route: "/WhereToLook",
@@ -38,22 +38,22 @@ const ArticlesScreen = () => {
     },
     {
       ref: "2308reflection",
-      blurb: "What is an adventure and how not to look for it.",
+      blurb: "Stuck in the valley.",
       date: "14.08.23",
       title: "Escaping expectation",
       route: "/EscapingExpectation",
     },
     {
       ref: "2403Norway",
-      blurb: "What adventure means and how not to look for it.",
+      blurb: "Ski Touring is more scary than climbing.",
       date: "02.03.24",
       title: "Norway",
       route: "/Norway",
     },
     {
       ref: "2405scrambled",
-      blurb: "What adventure means and how not to look for it.",
-      date: "14.08.23",
+      blurb: "Does it always rain on Skye?",
+      date: "24.05.24",
       title: "Scrambled",
       route: "/Scrambled",
     },
