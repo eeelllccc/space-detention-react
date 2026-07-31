@@ -6,6 +6,9 @@
 # production
 /build
 
+# downloaded live-feed posts and images (see scripts/README.md)
+/.live-export
+
 .DS_Store
 
 

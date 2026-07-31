@@ -10,6 +10,7 @@ import YosemiteTwoScreen from './screens/articles/2209yosemite2.article';
 import ReflectionScreen from './screens/articles/2308reflection';
 import NorwayScreen from './screens/articles/2403norway';
 import ScrambledScreen from './screens/articles/2405scrambled';
+import ValleeNoirScreen from './screens/articles/2603ValleeNoir';
 import LiveScreen from './screens/liveScreen.screen.jsx';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route element={<ReflectionScreen/>} path="/EscapingExpectation"/>
           <Route element={<NorwayScreen/>} path="/Norway"/>
           <Route element={<ScrambledScreen/>} path="/Scrambled"/>
+          <Route element={<ValleeNoirScreen/>} path="/ValleeNoir"/>
 
           <Route element={<LiveScreen/>} path="/Live"/>
         </Routes>

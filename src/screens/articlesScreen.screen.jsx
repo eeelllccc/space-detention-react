@@ -57,6 +57,13 @@ const ArticlesScreen = () => {
       title: "Scrambled",
       route: "/Scrambled",
     },
+    {
+      ref: "2603ValleeNoir",
+      blurb: "Twenty-seven days in the Ecrins.",
+      date: "09.03.26",
+      title: "Vallee Noir",
+      route: "/ValleeNoir",
+    },
   ];
 
   const articleContainer = {
